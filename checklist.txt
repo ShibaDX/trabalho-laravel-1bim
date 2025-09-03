@@ -1,0 +1,8 @@
+Criar projeto Laravel - [X]
+Criar Controller de Produto [X]
+Criar Model de Produto - [X]
+Definir rota - [X]
+Criar migrations - [X]
+Criar front-end - []
+Conexão com BD - []
+Exibir informações = []
