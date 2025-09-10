@@ -15,7 +15,7 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="card">
             <div class="card-header">
                 <h1>{{ $product->nome }}</h1>
@@ -24,7 +24,7 @@
                 <p><strong>ID:</strong> {{ $product->id }}</p>
                 <p><strong>Nome:</strong> {{ $product->nome }}</p>
                 <p><strong>Categoria:</strong> {{ $product->categoria }}</p>
-                <p><strong>Preço:</strong> R${{ $product->preco }}</p>
+                <p><strong>Preço:</strong> R${{ number_format($product->preco, 2, ',', '.') }}</p>
                 <p><strong>Quantidade:</strong> {{ $product->quantidade }}</p>
 
                 <a class="btn btn-success" href="/products">

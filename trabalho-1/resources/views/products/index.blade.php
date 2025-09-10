@@ -17,7 +17,7 @@
     </nav>
 
     <div class="container">
-        <h1>Lista de Produtos</h1>
+        <h1 class="mt-5">Lista de Produtos</h1>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -36,7 +36,7 @@
                         <td>{{ $product->nome }}</td>
                         <td>{{ $product->categoria }}</td>
                         <td>{{ $product->quantidade }}</td>
-                        <td>R${{ $product->preco }}</td>
+                        <td>R${{ number_format($product->preco, 2, ',', '.') }}</td>
                         <td>
                             <a href="{{ route('products.show', $product) }}">
                                 Detalhes

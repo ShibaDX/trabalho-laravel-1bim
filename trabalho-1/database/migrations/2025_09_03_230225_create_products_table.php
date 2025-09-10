@@ -33,3 +33,5 @@ return new class extends Migration
         Schema::dropIfExists('products');
     }
 };
+
+// comando para subir -> php artisan migrate

@@ -21,3 +21,5 @@ Route::get('/', function () {
 
 Route::get('/products', [ProductController::class, 'index']);
 Route::get('/products/{id}', [ProductController::class, 'show'])->name('products.show');
+
+// comando para rodar o server -> php artisan serve
